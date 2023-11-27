@@ -30,7 +30,7 @@
             <input type="radio" name="supplier_product_wise" value="supplier_wise" class="search_value"> &nbsp;&nbsp;
 
 
-            <strong> Fund Sector Sector Wise Report </strong>
+            <strong> Fund Sector Wise Report </strong>
             <input type="radio" name="supplier_product_wise" value="product_wise" class="search_value">
 
 
@@ -43,9 +43,9 @@
 
             <div class="row">
                 <div class="col-sm-8 form-group">
-                    <label>Supplier Name </label>
+                    <label>Funding Source</label>
               <select name="supplier_id" class="form-select select2"  >
-                <option value="">Select Supplier</option>
+                <option value="">Select Funding Source</option>
                 @foreach($supppliers as $supp)
                 <option value="{{ $supp->id }}">{{ $supp->name }}</option>
                @endforeach

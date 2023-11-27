@@ -53,7 +53,7 @@
                 <td> {{ date('d-m-Y',strtotime($item->date))  }} </td>
                  <td> {{ $item['supplier']['name'] }} </td>
                  <td> {{ $item['category']['name'] }} </td>
-                 <td> {{ $item->buying_qty }} </td>
+                 <td>৳ {{ $item->buying_qty }} </td>
                  <td> {{ $item['product']['name'] }} </td>
 
                  <td>

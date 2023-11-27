@@ -8,12 +8,12 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">Expense Sector Paid Report</h4>
+                                    <h4 class="mb-sm-0">Expense Sector Payable Report</h4>
 
                                     <div class="page-title-right">
                                         <ol class="m-0 breadcrumb">
                                             <li class="breadcrumb-item"><a href="javascript: void(0);"> </a></li>
-                                            <li class="breadcrumb-item active">Expense Sector Paid Report</li>
+                                            <li class="breadcrumb-item active">Expense Sector Payable Report</li>
                                         </ol>
                                     </div>
 
@@ -74,7 +74,7 @@
             <td class="text-center"><strong>Date</strong>
             </td>
 
-            <td class="text-center"><strong>Due Amount  </strong>
+            <td class="text-center"><strong>Advance Amount  </strong>
             </td>
 
 
@@ -107,7 +107,7 @@
                 <td class="no-line"></td>
                 <td class="no-line"></td>
                 <td class="text-center no-line">
-                    <strong>Grand Due Amount</strong></td>
+                    <strong>Grand Advance Amount</strong></td>
                 <td class="no-line text-end"><h4 class="m-0"> ৳ {{ $total_due}}</h4></td>
             </tr>
                             </tbody>

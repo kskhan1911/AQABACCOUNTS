@@ -102,12 +102,16 @@
                 </tbody>
 
                 <tbody>
-        <tr>
+
+                    <tr>
+                        <td name="discount_amount" id="discount_amount"> </td>
+                    </tr>
+        {{-- <tr>
             <td colspan="4">Discount/Fine</td>
             <td>
             <input type="text" name="discount_amount" id="discount_amount" class="form-control estimated_amount" placeholder="Discount/Fine"  >
             </td>
-        </tr>
+        </tr> --}}
 
 
                     <tr>
@@ -130,12 +134,12 @@
 
             <div class="row">
                 <div class="form-group col-md-3">
-                    <label> Paid Status </label>
+                    <label> Payable Status </label>
                     <select name="paid_status" id="paid_status" class="form-select">
                         <option value="">Select Status </option>
-                        <option value="full_paid">Full Paid </option>
-                        <option value="full_due">Full Due </option>
-                         <option value="partial_paid">Partial Paid </option>
+                        <option value="full_paid">Full Payable </option>
+                        <option value="full_due">Full Advance </option>
+                         <option value="partial_paid">Partial Payable </option>
 
                     </select>
         <input type="text" name="paid_amount" class="form-control paid_amount" placeholder="Enter Paid Amount" style="display:none;">

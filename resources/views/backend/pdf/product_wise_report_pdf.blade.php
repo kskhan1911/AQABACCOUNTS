@@ -8,12 +8,12 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">Month & Year Wise Stock Report</h4>
+                                    <h4 class="mb-sm-0">Sector Wise Fund Report</h4>
 
                                     <div class="page-title-right">
                                         <ol class="m-0 breadcrumb">
                                             <li class="breadcrumb-item"><a href="javascript: void(0);"> </a></li>
-                                            <li class="breadcrumb-item active">Month & Year Wise Stock Report</li>
+                                            <li class="breadcrumb-item active">Sector Wise Fund Report</li>
                                         </ol>
                                     </div>
 
@@ -87,14 +87,14 @@
         <thead>
         <tr>
 
-            <td class="text-center"><strong>Supplier Name </strong></td>
+            <td class="text-center"><strong>Funding Source</strong></td>
             <td class="text-center"><strong>Currency</strong>
             </td>
             <td class="text-center"><strong>Fund Sector</strong>
             </td>
             <td class="text-center"><strong>Month & Year</strong>
             </td>
-            <td class="text-center"><strong>Stock  </strong>
+            <td class="text-center"><strong>Fund </strong>
             </td>
 
 
@@ -111,7 +111,7 @@
          <td class="text-center"> {{ $product['unit']['name'] }} </td>
          <td class="text-center"> {{ $product['category']['name'] }} </td>
          <td class="text-center"> {{ $product->name }} </td>
-         <td class="text-center"> {{ $product->quantity }} </td>
+         <td class="text-center">৳ {{ $product->quantity }} </td>
 
 
         </tr>

@@ -59,10 +59,10 @@
             </a>
             <ul class="sub-menu" aria-expanded="false">
                 <li><a href="{{ route('customer.all') }}">All Expense Sector</a></li>
-                 <li><a href="{{ route('credit.customer') }}">Credit Expense Report</a></li>
+                 <li><a href="{{ route('credit.customer') }}">Advance Expense Report</a></li>
 
-                 <li><a href="{{ route('paid.customer') }}">Paid Expense Report</a></li>
-                  <li><a href="{{ route('customer.wise.report') }}">Expense Sector Wise Credit & Paid Report</a></li>
+                 <li><a href="{{ route('paid.customer') }}">Payable Expense Report</a></li>
+                  <li><a href="{{ route('customer.wise.report') }}">Expense Sector Wise Report</a></li>
 
             </ul>
         </li>
@@ -126,7 +126,7 @@
                 <li><a href="{{ route('invoice.all') }}">All Expense</a></li>
                 <li><a href="{{ route('invoice.pending.list') }}">Expense Pending</a></li>
                 <li><a href="{{ route('print.invoice.list') }}">Print All Expense</a></li>
-                  <li><a href="{{ route('daily.invoice.report') }}">Expense Report</a></li>
+                  <li><a href="{{ route('daily.invoice.report') }}">Daily Expense Report</a></li>
 
             </ul>
         </li>

@@ -9,7 +9,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0"> Expense Sector Wise Credit & Paid Report </h4>
+                                    <h4 class="mb-sm-0"> Expense Sector Wise Report </h4>
 
 
 
@@ -26,11 +26,11 @@
 
     <div class="row">
         <div class="text-center col-md-12">
-            <strong> Expense Sector Wise Credit Report </strong>
+            <strong> Expense Sector Wise Advance Report </strong>
             <input type="radio" name="customer_wise_report" value="customer_wise_credit" class="search_value"> &nbsp;&nbsp;
 
 
-            <strong> Expense Sector Wise Paid Report </strong>
+            <strong> Expense Sector Wise Payable Report </strong>
             <input type="radio" name="customer_wise_report" value="customer_wise_paid" class="search_value">
 
 

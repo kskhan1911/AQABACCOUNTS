@@ -139,7 +139,7 @@ $invoice_details = App\Models\InvoiceDetail::where('invoice_id',$payment->invoic
                     <strong>Subtotal</strong></td>
                 <td class="thick-line text-end"> ৳ {{ $total_sum }}</td>
             </tr>
-            <tr>
+            {{-- <tr>
                 <td class="no-line"></td>
                  <td class="no-line"></td>
                   <td class="no-line"></td>
@@ -148,7 +148,7 @@ $invoice_details = App\Models\InvoiceDetail::where('invoice_id',$payment->invoic
                 <td class="text-center no-line">
                     <strong>Discount Amount</strong></td>
                 <td class="no-line text-end"> ৳ {{ $payment->discount_amount }}</td>
-            </tr>
+            </tr> --}}
              <tr>
                 <td class="no-line"></td>
                  <td class="no-line"></td>
@@ -156,7 +156,7 @@ $invoice_details = App\Models\InvoiceDetail::where('invoice_id',$payment->invoic
                    <td class="no-line"></td>
                 <td class="no-line"></td>
                 <td class="text-center no-line">
-                    <strong>Paid Amount</strong></td>
+                    <strong>Payable Amount</strong></td>
                 <td class="no-line text-end">৳ {{ $payment->paid_amount }}</td>
             </tr>
 
@@ -167,7 +167,7 @@ $invoice_details = App\Models\InvoiceDetail::where('invoice_id',$payment->invoic
                    <td class="no-line"></td>
                 <td class="no-line"></td>
                 <td class="text-center no-line">
-                    <strong>Due Amount</strong></td>
+                    <strong>Advance Amount</strong></td>
                     <input type="hidden" name="new_paid_amount" value="{{$payment->due_amount}}">
                 <td class="no-line text-end"> ৳ {{ $payment->due_amount }}</td>
             </tr>
@@ -191,11 +191,11 @@ $invoice_details = App\Models\InvoiceDetail::where('invoice_id',$payment->invoic
         <div class="row">
 
             <div class="form-group col-md-3">
-                  <label> Paid Status </label>
+                  <label> Payable Status </label>
                     <select name="paid_status" id="paid_status" class="form-select">
                         <option value="">Select Status </option>
-                        <option value="full_paid">Full Paid </option>
-                        <option value="partial_paid">Partial Paid </option>
+                        <option value="full_paid">Full Payable </option>
+                        <option value="partial_paid">Partial Payable </option>
 
                     </select>
         <input type="text" name="paid_amount" class="form-control paid_amount" placeholder="Enter Paid Amount" style="display:none;">

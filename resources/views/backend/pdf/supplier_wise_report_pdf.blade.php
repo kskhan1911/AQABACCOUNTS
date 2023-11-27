@@ -8,12 +8,12 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">Supplier Wise Stock Report</h4>
+                                    <h4 class="mb-sm-0">Source Wise Fund Report</h4>
 
                                     <div class="page-title-right">
                                         <ol class="m-0 breadcrumb">
                                             <li class="breadcrumb-item"><a href="javascript: void(0);"> </a></li>
-                                            <li class="breadcrumb-item active">Supplier Wise Stock Report</li>
+                                            <li class="breadcrumb-item active">Source Wise Fund Report</li>
                                         </ol>
                                     </div>
 
@@ -81,21 +81,21 @@
                 <div class="">
 <div class="table-responsive">
 
-    <h3 class="text-center"><strong>Supplier Name : </strong> {{ $allData['0']['supplier']['name'] }} </h3>
+    <h3 class="text-center"><strong>Funding Source : </strong> {{ $allData['0']['supplier']['name'] }} </h3>
 
 
     <table class="table">
         <thead>
         <tr>
             <td><strong>Sl </strong></td>
-            <td class="text-center"><strong>Supplier Name </strong></td>
-            <td class="text-center"><strong>Unit  </strong>
+            <td class="text-center"><strong>Funding Source</strong></td>
+            <td class="text-center"><strong>Currency</strong>
             </td>
-            <td class="text-center"><strong>Category</strong>
+            <td class="text-center"><strong>Fund Sector</strong>
             </td>
-            <td class="text-center"><strong>Product Name</strong>
+            <td class="text-center"><strong>Month & Year</strong>
             </td>
-            <td class="text-center"><strong>Stock  </strong>
+            <td class="text-center"><strong>Fund </strong>
             </td>
 
 
@@ -112,7 +112,7 @@
          <td class="text-center"> {{ $item['unit']['name'] }} </td>
          <td class="text-center"> {{ $item['category']['name'] }} </td>
          <td class="text-center"> {{ $item->name }} </td>
-         <td class="text-center"> {{ $item->quantity }} </td>
+         <td class="text-center">৳ {{ $item->quantity }} </td>
 
 
         </tr>

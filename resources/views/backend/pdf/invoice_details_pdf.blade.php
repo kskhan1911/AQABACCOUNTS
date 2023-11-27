@@ -117,7 +117,7 @@
             <td class="text-center"><strong>Fund Sector</strong></td>
             <td class="text-center"><strong>Month & Year</strong>
             </td>
-            <td class="text-center"><strong>Current Stock</strong>
+            <td class="text-center"><strong>Current Fund</strong>
             </td>
             <td class="text-center"><strong>Amount</strong>
             </td>
@@ -161,7 +161,7 @@
                     <strong>Subtotal</strong></td>
                 <td class="thick-line text-end"> ৳ {{ $total_sum }}</td>
             </tr>
-            <tr>
+            {{-- <tr>
                 <td class="no-line"></td>
                  <td class="no-line"></td>
                   <td class="no-line"></td>
@@ -170,7 +170,7 @@
                 <td class="text-center no-line">
                     <strong>Discount/Fine</strong></td>
                 <td class="no-line text-end"> ৳ {{ $payment->discount_amount }}</td>
-            </tr>
+            </tr> --}}
              <tr>
                 <td class="no-line"></td>
                  <td class="no-line"></td>
@@ -178,7 +178,7 @@
                    <td class="no-line"></td>
                 <td class="no-line"></td>
                 <td class="text-center no-line">
-                    <strong>Paid Amount</strong></td>
+                    <strong>Payable Amount</strong></td>
                 <td class="no-line text-end"> ৳{{ $payment->paid_amount }}</td>
             </tr>
 
@@ -189,7 +189,7 @@
                    <td class="no-line"></td>
                 <td class="no-line"></td>
                 <td class="text-center no-line">
-                    <strong>Due Amount</strong></td>
+                    <strong>Advance Amount</strong></td>
                 <td class="no-line text-end"> ৳ {{ $payment->due_amount }}</td>
             </tr>
             <tr>
@@ -206,7 +206,7 @@
 
 
             <tr>
-                <td colspan="7" style="text-align: center;font-weight: bold;">Paid Summary</td>
+                <td colspan="7" style="text-align: center;font-weight: bold;">Payable Summary</td>
 
             </tr>
 

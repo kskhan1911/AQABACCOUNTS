@@ -87,18 +87,18 @@
             <td colspan="6"> Sub Total </td>
              <td > ৳ {{ $total_sum }} </td>
         </tr>
-         <tr>
+         {{-- <tr>
             <td colspan="6">Discount/Fine</td>
              <td > ৳ {{ $payment->discount_amount }} </td>
-        </tr>
+        </tr> --}}
 
          <tr>
-            <td colspan="6"> Paid Amount </td>
+            <td colspan="6"> Payable Amount </td>
              <td > ৳ {{ $payment->paid_amount }} </td>
         </tr>
 
          <tr>
-            <td colspan="6"> Due Amount </td>
+            <td colspan="6"> Advance Amount </td>
              <td > ৳ {{ $payment->due_amount }} </td>
         </tr>
 
