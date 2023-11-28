@@ -32,7 +32,7 @@
                         <thead>
                         <tr>
                             <th>Sl</th>
-                            <th>Name</th>
+                            <th>Month & Year</th>
                             <th>Funding Source</th>
                             <th>Currency</th>
                             <th>Fund Sector</th>
