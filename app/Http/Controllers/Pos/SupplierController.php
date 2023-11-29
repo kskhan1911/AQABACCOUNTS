@@ -14,12 +14,12 @@ class SupplierController extends Controller
         // $suppliers = Supplier::all();
         $suppliers = Supplier::latest()->get();
         return view('backend.supplier.supplier_all',compact('suppliers'));
-    } // End Method 
+    } // End Method
 
 
     public function SupplierAdd(){
      return view('backend.supplier.supplier_add');
-    } // End Method 
+    } // End Method
 
 
     public function SupplierStore(Request $request){
@@ -30,18 +30,18 @@ class SupplierController extends Controller
             'email' => $request->email,
             'address' => $request->address,
             'created_by' => Auth::user()->id,
-            'created_at' => Carbon::now(), 
+            'created_at' => Carbon::now(),
 
         ]);
 
          $notification = array(
-            'message' => 'Supplier Inserted Successfully', 
+            'message' => 'Funding Source Inserted Successfully',
             'alert-type' => 'success'
         );
 
         return redirect()->route('supplier.all')->with($notification);
 
-    } // End Method 
+    } // End Method
 
 
     public function SupplierEdit($id){
@@ -49,7 +49,7 @@ class SupplierController extends Controller
         $supplier = Supplier::findOrFail($id);
         return view('backend.supplier.supplier_edit',compact('supplier'));
 
-    } // End Method 
+    } // End Method
 
     public function SupplierUpdate(Request $request){
 
@@ -61,33 +61,32 @@ class SupplierController extends Controller
             'email' => $request->email,
             'address' => $request->address,
             'updated_by' => Auth::user()->id,
-            'updated_at' => Carbon::now(), 
+            'updated_at' => Carbon::now(),
 
         ]);
 
          $notification = array(
-            'message' => 'Supplier Updated Successfully', 
+            'message' => 'Funding Source Updated Successfully',
             'alert-type' => 'success'
         );
 
         return redirect()->route('supplier.all')->with($notification);
 
-    } // End Method 
+    } // End Method
 
 
     public function SupplierDelete($id){
 
       Supplier::findOrFail($id)->delete();
-      
+
        $notification = array(
-            'message' => 'Supplier Deleted Successfully', 
+            'message' => 'Funding Source Deleted Successfully',
             'alert-type' => 'success'
         );
 
         return redirect()->back()->with($notification);
 
-    } // End Method 
+    } // End Method
 
 
 }
- 

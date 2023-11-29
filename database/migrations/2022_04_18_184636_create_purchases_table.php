@@ -22,7 +22,7 @@ return new class extends Migration
             $table->date('date');
             $table->string('description')->nullable();
             $table->double('buying_qty');
-            $table->double('unit_price');
+            $table->double('unit_price')->nullable();
             $table->double('buying_price');
             $table->tinyInteger('status')->default('0')->comment('0=Pending, 1=Approved');
             $table->integer('created_by')->nullable();
@@ -30,7 +30,7 @@ return new class extends Migration
             $table->timestamps();
         });
     }
- 
+
     /**
      * Reverse the migrations.
      *

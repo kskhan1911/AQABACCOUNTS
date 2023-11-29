@@ -18,7 +18,7 @@
                 @csrf
 
             <div class="mb-3 row">
-                <label for="example-text-input" class="col-sm-2 col-form-label">Month & Year Name </label>
+                <label for="example-text-input" class="col-sm-2 col-form-label">Month & Year </label>
                 <div class="form-group col-sm-10">
                     <input name="name" class="form-control" type="text"    >
                 </div>
@@ -27,7 +27,7 @@
 
 
             <div class="mb-3 row">
-        <label class="col-sm-2 col-form-label">Funding Source Name </label>
+        <label class="col-sm-2 col-form-label">Funding Source </label>
         <div class="col-sm-10">
             <select name="supplier_id" class="form-select" aria-label="Default select example">
                 <option selected="">Open this select menu</option>
@@ -40,7 +40,7 @@
   <!-- end row -->
 
       <div class="mb-3 row">
-        <label class="col-sm-2 col-form-label">Currency Name </label>
+        <label class="col-sm-2 col-form-label">Currency </label>
         <div class="col-sm-10">
             <select name="unit_id" class="form-select" aria-label="Default select example">
                 <option selected="">Open this select menu</option>
@@ -55,7 +55,7 @@
 
 
       <div class="mb-3 row">
-        <label class="col-sm-2 col-form-label">Fund Sector Name </label>
+        <label class="col-sm-2 col-form-label">Fund Sector </label>
         <div class="col-sm-10">
             <select name="category_id" class="form-select" aria-label="Default select example">
                 <option selected="">Open this select menu</option>

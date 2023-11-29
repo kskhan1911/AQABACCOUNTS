@@ -296,7 +296,7 @@
         $(document).on('keyup click','.unit_price,.selling_qty', function(){
             var unit_price = $(this).closest("tr").find("input.unit_price").val();
             var qty = $(this).closest("tr").find("input.selling_qty").val();
-            var total = unit_price * qty;
+            var total =qty;
             $(this).closest("tr").find("input.selling_price").val(total);
             $('#discount_amount').trigger('keyup');
         });

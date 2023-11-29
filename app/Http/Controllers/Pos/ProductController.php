@@ -10,7 +10,7 @@ use App\Models\Supplier;
 use App\Models\Unit;
 use Auth;
 use Illuminate\Support\Carbon;
-  
+
 class ProductController extends Controller
 {
     public function ProductAll(){
@@ -18,7 +18,7 @@ class ProductController extends Controller
         $product = Product::latest()->get();
         return view('backend.product.product_all',compact('product'));
 
-    } // End Method 
+    } // End Method
 
 
     public function ProductAdd(){
@@ -27,7 +27,7 @@ class ProductController extends Controller
         $category = Category::all();
         $unit = Unit::all();
         return view('backend.product.product_add',compact('supplier','category','unit'));
-    } // End Method 
+    } // End Method
 
 
     public function ProductStore(Request $request){
@@ -40,17 +40,17 @@ class ProductController extends Controller
             'category_id' => $request->category_id,
             'quantity' => '0',
             'created_by' => Auth::user()->id,
-            'created_at' => Carbon::now(), 
+            'created_at' => Carbon::now(),
         ]);
 
         $notification = array(
-            'message' => 'Product Inserted Successfully', 
+            'message' => 'Month & Year Inserted Successfully',
             'alert-type' => 'success'
         );
 
-        return redirect()->route('product.all')->with($notification); 
+        return redirect()->route('product.all')->with($notification);
 
-    } // End Method 
+    } // End Method
 
 
 
@@ -61,7 +61,7 @@ class ProductController extends Controller
         $unit = Unit::all();
         $product = Product::findOrFail($id);
         return view('backend.product.product_edit',compact('product','supplier','category','unit'));
-    } // End Method 
+    } // End Method
 
 
 
@@ -74,35 +74,34 @@ class ProductController extends Controller
             'name' => $request->name,
             'supplier_id' => $request->supplier_id,
             'unit_id' => $request->unit_id,
-            'category_id' => $request->category_id, 
+            'category_id' => $request->category_id,
             'updated_by' => Auth::user()->id,
-            'updated_at' => Carbon::now(), 
+            'updated_at' => Carbon::now(),
         ]);
 
         $notification = array(
-            'message' => 'Product Updated Successfully', 
+            'message' => 'Month & Year Updated Successfully',
             'alert-type' => 'success'
         );
 
-        return redirect()->route('product.all')->with($notification); 
+        return redirect()->route('product.all')->with($notification);
 
 
-    } // End Method 
+    } // End Method
 
 
     public function ProductDelete($id){
-       
+
        Product::findOrFail($id)->delete();
             $notification = array(
-            'message' => 'Product Deleted Successfully', 
+            'message' => 'Month & Year Deleted Successfully',
             'alert-type' => 'success'
         );
 
-        return redirect()->back()->with($notification); 
+        return redirect()->back()->with($notification);
 
-    } // End Method 
+    } // End Method
 
 
 
 }
- 

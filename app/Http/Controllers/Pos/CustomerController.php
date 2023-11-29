@@ -45,7 +45,7 @@ class CustomerController extends Controller
         ]);
 
          $notification = array(
-            'message' => 'Customer Inserted Successfully',
+            'message' => 'Expense Sector Inserted Successfully',
             'alert-type' => 'success'
         );
 
@@ -84,7 +84,7 @@ class CustomerController extends Controller
         ]);
 
          $notification = array(
-            'message' => 'Customer Updated with Image Successfully',
+            'message' => 'Expense Sector Updated with Image Successfully',
             'alert-type' => 'success'
         );
 
@@ -103,7 +103,7 @@ class CustomerController extends Controller
         ]);
 
          $notification = array(
-            'message' => 'Customer Updated without Image Successfully',
+            'message' => 'Expense Sector Updated without Image Successfully',
             'alert-type' => 'success'
         );
 
@@ -123,7 +123,7 @@ class CustomerController extends Controller
         Customer::findOrFail($id)->delete();
 
         $notification = array(
-            'message' => 'Customer Deleted Successfully',
+            'message' => 'Expense Sector Deleted Successfully',
             'alert-type' => 'success'
         );
 
@@ -190,7 +190,7 @@ class CustomerController extends Controller
             $payment_details->save();
 
               $notification = array(
-            'message' => 'Invoice Update Successfully',
+            'message' => 'Expense Update Successfully',
             'alert-type' => 'success'
         );
         return redirect()->route('credit.customer')->with($notification);

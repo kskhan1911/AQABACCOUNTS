@@ -30,7 +30,7 @@
 
         <div class="col-md-4">
             <div class="md-3">
-                <label for="example-text-input" class="form-label">Funding Source Name</label>
+                <label for="example-text-input" class="form-label">Funding Source</label>
                 <select id="supplier_id" name="supplier_id" class="form-select select2" aria-label="Default select example">
                 <option selected="">Open this select menu</option>
                 @foreach($supplier as $supp)
@@ -43,7 +43,7 @@
 
        <div class="col-md-4">
             <div class="md-3">
-                <label for="example-text-input" class="form-label">Fund Sector Name </label>
+                <label for="example-text-input" class="form-label">Fund Sector</label>
                 <select name="category_id" id="category_id" class="form-select select2" aria-label="Default select example">
                 <option selected="">Open this select menu</option>
 
@@ -54,7 +54,7 @@
 
          <div class="col-md-4">
             <div class="md-3">
-                <label for="example-text-input" class="form-label">Month & Year Name </label>
+                <label for="example-text-input" class="form-label">Month & Year</label>
                 <select name="product_id" id="product_id" class="form-select select2" aria-label="Default select example">
                 <option selected="">Open this select menu</option>
 
@@ -246,7 +246,7 @@
         $(document).on('keyup click','.unit_price,.buying_qty', function(){
             var unit_price = $(this).closest("tr").find("input.unit_price").val();
             var qty = $(this).closest("tr").find("input.buying_qty").val();
-            var total = unit_price * qty;
+            var total = qty;
             $(this).closest("tr").find("input.buying_price").val(total);
             totalAmountPrice();
         });
